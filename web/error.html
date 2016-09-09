@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  type="text/css" href="matajcss.css"/>
+        <title>MATAJ Bank</title>
+        
+        <script>
+            window.onload = function error()
+            {
+                document.getElementById('error').innerHTML="*Invaild Username or Password";
+                //document.log.uname.value="";
+                //document.log.password.value="";
+                document.log.uname.focus();
+               // document.log.password.focus();
+           }
+           // window.onload = error;
+        </script>
+    </head>
+    
+ <body id="MainBody">
+       <h1 align = "Center">Error</h1>
+         <img src="MATAJ.png" alt="MATAJ Bank logo-" width="220" height="98"/>
+        <div id="navigator">
+            <ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="about_us.html">About Us</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="https://support.google.com/">Help</a></li>
+            </ul>
+        </div>  
+                
+       <div id="errorForm">
+        <form METHOD=post ACTION ="login.jsp" name="log">
+            <fieldset>
+            <table align="center" >
+                <tr><td>
+                        <label>Username : </label> </td><td><input type ="text" name ="uname"/>
+                    </td> </tr>
+            <tr><td>
+              <label>  Password : </label></td><td><input type ="password" name ="password" />
+                 
+                <td>
+                 <div id="error">  </div> 
+             </td>
+             </tr>
+            
+            <tr align="center"><td>
+                <div id="buttons">
+                    <input type ="submit" name ="LOGIN" value="Login" style="background-color: lightskyblue"/>
+                </div>
+                </td>
+                <td><a href="Register.html"> Register</a></td>
+                     
+            </tr>     
+           </table>
+           </fieldset>
+        </form>
+       </div>    
+         
+    </body>
+</html>

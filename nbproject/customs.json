@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "name": {
+            "context": "td"
+        },
+        "align": {
+            "context": "a"
+        }
+    }
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <LINK REL=StyleSheet HREF="Navi.css" TYPE="text/css" />
+        <LINK REL=StyleSheet HREF="Logo.css" TYPE="text/css" />
+          <script src ="Logo.js" type="text/javascript"></script>
+
+    <script>
+        
+         function check()
+            {
+                
+                var PASSWORD = AP.Ppass.value;
+                var CPASSWORD = AP.Cpass.value;
+                
+                if((PASSWORD == "")||(CPASSWORD == "")){
+                    alert("No Password Entered");
+                    
+                    
+                }else if(PASSWORD == CPASSWORD){
+                    
+                   // window.location = "Register.html";
+                    
+                }else{
+                    alert("Password Does Not Match");
+                    AP.Cpass.value = "";
+                    AP.Ppass.value = "";
+                }
+            }
+            function Doublecheck()
+            {
+                
+                AP.Cpass.value = "";
+                
+            }
+//             
+//			// The variable will hold the value of the form confirmation response 
+//			//var resetForm = window.confirm("Are you sure you want to reset the form?");
+//	
+//			//Checks if the response is yes. 
+//			//if(resetForm == true)
+//	
+//	
+//			// The form get reset. 
+//			//return true;
+//	
+//			//Otherwise the form is not reset. 
+//			//return false;
+//                        //document.getElementById("register").reset();
+//	
+//				
+           function chec()
+           {
+               var id_num = document.register.id.value;
+               var gen = id_num.substr(6,1);
+               var gender = document.getElementById("Gender");
+                            
+                   if(gen>=5){
+                       gender.value = "Male";
+                                
+                   }else if((gen>0)&&(gen<5)){
+                       gender.value = "Female";
+                   }else{
+                       gender.value = "";
+                   }
+                           
+           }           
+       function CreateAccNum()
+			{ // varibles 
+                            
+                            
+                            var id_num = document.register.id.value;
+                            var randomNum = 10 + Math.floor((Math.random()* 10) + 1);
+                            var acc = 21;
+                            var Output = acc+ "" + randomNum + "" + id_num.substr(7,3) + id_num.substr(12); 
+                            document.getElementById("ACCNO").value = Output;
+                            var gen = id_num.substr(6,1);
+                            var gender = document.getElementById("Gender");
+                            
+                            chec();
+                            
+                            if(gen <= 4){
+                                gender.value = 'Female';
+                            }else{
+                                gender.value = 'Male';
+                            }
+                           
+                             if(id_num.length < 13)
+                              {
+					 	
+                         		alert("ID number was short. Enter 13 numbers for ID field");
+                                        document.register.id.value = "";
+                                        document.register.ACCNO.value = "";
+                                        document.register.Gender.value = "";
+                			document.register.id.focus();
+                                        return false;
+                              }
+                              
+                             if ( id_num.length > 13)
+                              {
+                                  alert("ID number was long. Enter 13 numbers for ID field");
+                                  document.register.id.value ="";
+                                  document.register.ACCNO.value = "";
+                                  document.register.Gender.value = "";
+                                  document.register.id.focus();
+                                  return false;
+                                
+                              }
+                              
+                              document.register.acc.value = Output;
+                              document.getElementById("ACCNO").value = ''+Output;
+
+                           //   document.getElementById('ACCNO').innerHMTL= Output;
+                              //alert("Your new Account is:" +  Output);
+                          // return Output;
+                             
+                             //Vaildate checkbox
+                             var option = document.getElementById('chkbox');
+                             if(option.checked==true)
+                             {
+                                  document.getElementById('register').reset();
+                                  return true;
+                             }else
+                             {
+                                 return false;
+                             }
+                        }
+         
+//          
+
+
+    
+    function ver(){
+        var ACC = document.register.ACCNO.value;
+        var Name = document.register.name.value;
+        var Surname = document.register.surname.value;
+        var Ag = document.register.age.value;
+        var Race = document.register.race.value;
+        var nat = document.register.nationality.value;
+        var addr = document.register.address.value;
+        var email = document.register.email.value;
+        var contact = document.register.contact.value;
+        var month = document.register.monthly_income.value;
+        
+        
+    //    document.getElementById('REG').disabled = false;
+        
+        if(ACC.length<8){
+            alert("ID Number not inserted");
+            document.register.VAL.value = "";
+            document.register.id.focus();
+            document.getElementById('verif').checked=false;
+        }
+        else if((Name=="")||(Surname=="")||(Ag=="")||(Race=="")||(nat=="")||(addr=="")||(email=="")||(contact=="")||(month=="")){
+            alert("Please make sure all field are filled in.");
+            document.register.id.focus();
+            document.getElementById('verif').checked=false;
+        }
+        else if((contact.length>10)||(contact.length<10)){
+            alert("Contact details invalid, Please correct it");
+            document.register.contact.focus();
+            document.getElementById('verif').checked=false;
+        }
+        else{
+            document.getElementById('REG').disabled = false;
+        }
+        
+        
+    }
+//    function CreateAccNum()
+//			{ // varibles 
+//                            
+//                            
+//                            var id_num = document.register.id.value;
+//                            var randomNum = 10 + Math.floor((Math.random()* 10) + 1);
+//                            var acc = 21;
+//                            var Output = acc+ "" + randomNum + "" + id_num.substr(7,3) + id_num.substr(12);  
+//                            var label = document.getElementById("ACCNO").value = Output;
+//                            var gen = id_num.substr(6,1);
+//                            var gender = document.getElementById("Gender");
+//                            
+//                           chec();
+//                                    
+//                             if(id_num.length < 13)
+//                              {
+//                         		alert("ID number was short. Enter 13 numbers for ID field");
+//                                        document.register.id.value = "";
+//                                        document.register.VAL.value = "";
+//                                        chec();
+//                			document.register.id.focus();
+//                                        return false;
+//                              }
+//                              
+//                             if ( id_num.length > 13)
+//                              {
+//                                  alert("ID number was long. Enter 13 numbers for ID field");
+//                                  document.register.id.value ="";
+//                                  document.register.VAL.value = ""; 
+//                                  chec();
+//                                  document.register.id.focus();
+//                                  return false
+//                                
+//                              }
+//                              
+//                              document.register.acc.value = Output;
+//                              document.getElementById("ACCNO").value = ''+Output;
+//                              
+//                             
+//                             // label.textContent ;
+//                              //alert("Your new Account is:" +  Output);
+//                          // return Output;
+//                             
+//                        }
+     </script>
+     <script type="text/javascript" src="RegId.js"></script>
+    </head>
+    <body>
+        <div id ="Logo">
+            <img src="MATAJ.png" alt ="Logo" onclick="home()"/>
+        </div>
+        <nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li>
+			<a >Sign In/Up<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li><a href="login.html">Sign In</a></li>
+					<li><a href="Register.html">Sign Up</a></li>
+				
+				</ul>
+			</div>
+		</li>
+		<li><a href="aboutUs.html">About Us</a></li>
+		<li><a href="Services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+	</ul>
+        </nav>
+        <form method="post" action="Registration.jsp" name="register" id="register"  onclick="">
+        <center>
+            <h2 style="color:green">Registration </h2>
+        </center>
+        <table  align="center" >
+            <tr>
+                <td>ID:</td> <td><input type="text" name="id" id="IDN" required="required" onchange="CreateAccNum()"/></td>
+            
+            </tr>
+            <tr>
+                <td>Name:</td> <td><input type="text" name="name"  /></td>
+            </tr>
+            <tr>
+                <td>Surname:</td> <td><input type="text" name="surname"/></td>
+            </tr>
+            <tr>
+                <td>Gender</td> 
+                <td>
+                    <input type="text" id="Gender" name="Gender" onchange="chec()"/>
+                                
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td> <td><input type="text" name="age" /></td>
+            </tr>
+            <tr>
+                <td>Race:</td> <td><input type="text" name="race"/></td>
+            </tr>
+            <tr>
+                <td>Nationality:</td> <td><input type="text" name="nationality"/></td>
+            </tr>
+            <tr>
+                <td>Address:</td> <td><textarea name="address" cols = "20" rows="9"></textarea> </td>
+            </tr>
+             <tr>
+                <td>Email:</td> <td><input type="email" name="email" required="required" placeholder="name@mataj.com"/></td>
+            </tr>
+            <tr>
+                <td>Contact:</td> <td><input type="text" name="contact"  placeholder="Enter Digits only" title="Phone number must contain 10 digits.."/></td>
+            </tr>
+            <tr>
+                <td>Monthly Income:</td> <td><input type="text" name="monthly_income"/></td>
+            </tr>
+            <tr>
+                <td>Account:</td> <td><input type="text" name="ACCNO" id="ACCNO" onchange="check()"></td>
+            </tr>
+             <td>New Password</td>
+             <td>
+                    <input type ="password" name="Ppass" id ="Ppass"  required="required" onchange="Doublecheck()"/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Confirm Password:</td>
+                <td>
+                    <input type ="password" name="Cpass" id ="Cpass" required="required" onchange="chec()"/>
+                </td>
+            </tr>
+             <tr><td></td>
+                <td><input type = "checkbox" name = "Veri" id="verif" onclick="ver()" required="required"/>I verify that the information above is correct.</td>
+             
+            </tr>
+            <tr >
+                <td>
+                <div id="button">
+                    <input type="Submit" id ='REG' name="Register" disabled='disabled'>
+                    <input type="reset" name="Reset">
+                </div>
+            
+                </td>
+            </tr>
+              
+        </table>
+    </form>
+    </body>
+</html>

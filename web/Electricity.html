@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MATAJBank_Buy_Electricity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  type="text/css" href="transaction.css"/>
+         <LINK REL=StyleSheet HREF="Logo.css" TYPE="text/css" />
+        <script src ="Logo.js" type="text/javascript"></script>
+        <script>
+            
+            function elec()
+            {
+                var date =  Date();
+                var random1 = Math.floor((Math.random()* 9) + 1) +""+ Math.floor((Math.random()* 9) + 99);
+                var random2  = Math.floor((Math.random()* 8) + 1) +""+ Math.floor((Math.random()* 9) + 99);
+                var random3  = Math.floor((Math.random()* 7) + 1) +""+ Math.floor((Math.random()* 9) + 99);
+                var random4  = Math.floor((Math.random()* 6) + 1) +""+ Math.floor((Math.random()* 9) + 99);
+                
+                document.write = "'"  +random1 + " "+random3 + " "+random2 + " "+random4 +"' "+ date;
+            }
+        </script>
+    </head>
+    <body>
+        <div id ="Logo">
+            <img src="MATAJ.png" alt ="Logo" onclick="home()"/>
+        </div>
+        <div align="center"><a href="login.html">Log Out</a>
+        <div>Electricity</div>
+        </div><br>
+        <div align="center">
+        <form name="electricity" method="post" action="ElecJsp.jsp" align="center">
+            
+<!--                Buy Electricity-->
+    <table>
+    <tr>
+        <td>Amount:</td> <td><input type="text" name="amt"/></td>
+    </tr>
+    <tr>
+        <td>Account Number:</td><td><input type="text" name="acc"/></td>
+    </tr>
+    <tr>
+                
+            <div id="btn">
+                <td><input type="submit" name="btnElec" value="Purchase Electricity" onclick="elec()"/></td>
+                <td> <input type="reset" name="btnReset"/></td>
+            </div>  
+        
+    </tr>
+</table>
+</form>
+        </div>
+         <p id="demo"></p>
+     <a href="transactions.html">Back</a>
+    </body>
+</html>

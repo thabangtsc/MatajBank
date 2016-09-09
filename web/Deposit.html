@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet"  type="text/css" href="transaction.css"/>
+         <LINK REL=StyleSheet HREF="Logo.css" TYPE="text/css" />
+        <script src ="Logo.js" type="text/javascript"></script>
+        <title>TRANSACTIONS</title>
+    </head>
+    <body>
+         <div id ="Logo">
+            <img src="MATAJ.png" alt ="Logo" onclick="home()"/>
+        </div>
+        <div align="center"><a href="login.html">Log Out</a></div>
+         <h1 align='center' style="color:red">Deposit_Transactions</h1>
+        <div></div>
+        <form method="post" action="transaction.jsp" >
+        <center>
+            <h2 style="color:green">Transfer's </h2>
+        </center>
+        <table  align="center" >
+            <tr>
+                <td>Sender's Account:</td> <td><input type="text" name="Sacc" required="required"/></td>
+            </tr>
+            <tr>
+                <td>Receiver's Account</td> <td><input type="text" name="Racc" required="required" /></td>
+            </tr>
+            <tr>
+                <td>Amount</td> <td><input type="text" name="Amount"/></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div id="button">
+                        <input type="Submit" id ='REG' name="Register">
+                   
+                    </div>
+		</td>
+            </tr>
+        </table>
+        </form>
+        <a href="transactions.html">Back</a>
+    </body>
+</html>

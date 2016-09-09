@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09 Aug 2016, 12:03:20 AM
+    Author     : Thabang
+*/
+
+#MainBody
+        {
+            background-color:#e6f2ff;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-attachment: fixed;
+        }
+#MainBody img
+        {
+            position: fixed;
+            top:10px;
+            bottom:0px;
+            right:400px;
+            left:145px;
+            
+        }
+#navigator
+        {
+            background-color: #80bfff;
+            width:80%;
+            height:35px;
+            margin-left:auto;
+            margin-right:auto;
+        }   
+
+#navigator ul
+      
+        {
+            list-style-type:none;
+            padding-left: 100px;
+            margin:0;
+            overflow: hidden;
+            background-color: darkgray;
+            padding:0 248px 0 200px;
+
+/*            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: center;
+            align-content: center;*/
+            
+        }			
+			
+#navigator li 
+      
+	{
+		float:right;
+        
+				
+	}
+#navigator li a 
+      
+	{
+		display: block;
+                color: white;
+                text-align: center;
+                padding:8px 18px;
+                text-decoration: none;
+				
+	}        
+#navigator a
+        {
+            display:block;
+            padding: 8px;
+            background-color: #dddddd;
+        }
+/*#navigator ul li a
+      
+	{
+		text-decoration:none;
+		width:20px;
+                height:20px;
+		color:white;
+                font-weight:bold;
+                background:lavender;
+		padding:6px;
+                margin-left:15px;
+                margin-right:15px;
+				
+         }*/
+
+	 
+			 
+#navigator li a:hover
+	{
+		background-color: #111;;
+	}
+					
+#navigator a:visited	
+	{
+              background-color:green;
+	}
+					
+#navigator a:active	
+        {
+               background-color: #4CAF50;
+	}
+.body
+        {
+            border: 2px solid;
+            width:80%;
+            top:2px;
+            margin-left:auto;
+            margin-right:auto;
+            
+        }
+#Info
+        {
+            padding:50px;
+            font-family:"Time New Roman",Times, serif;
+            font-size:19px;
+            width:50%
+            
+            
+        }
+#LogForm
+        {
+            position: fixed;
+            top:140px;
+            bottom:0px;
+            right:0px;
+            left:800px;
+            border-style: soild;
+                     
+            border-radius: 5px;           
+            background:lavender;
+            width:320px;
+            height: 100px;
+                        
+        }
+        
+#errorForm
+        {
+            position: relative;
+            top:25px;
+            left:480px;
+            border-style: soild;
+            border-radius: 5px;
+           
+            border-radius: 10px;
+            background:lavender;
+            width:320px;
+            height: 140px;
+            
+            
+        }          
+#error
+        {
+            color:red;
+            font-weight:bold
+        }
+#buttons input button
+        {
+            
+             padding:25px;
+            background-color:rgba(255,204,0,1);
+            border:1px solid #ffcc00;
+            color:#08233e;
+            text-decoration:none;
+            cursor: pointer;
+           
+        }

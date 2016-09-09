@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MATAJ Bank ContactUs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  type="text/css" href="matajcss.css"/>
+        <script type="text/javascript" src="Contact_js.js"></script>
+    </head>
+    <body>
+        <div align="center"><h1>Contact us</h1></div>
+        <div id="navigator">
+            <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about_us.html">About Us</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="#">Contact Us</a></li>
+                <li><a href="https://support.google.com/">Help</a></li>
+            </ul>
+        </div> 
+        
+        <div id="main">
+			
+        <form action="" method="post" name="contact1">
+	
+	<table>
+		<tr>
+		<th>
+                        <h2>
+                            <br>
+				Contact Us @.
+                            <br/>
+				 <img src="MATAJ.png" alt="MATAJ Bank contact us picture" width="400" height="200"/>
+			</h2>
+			
+			
+		</th>
+		</tr>
+		<tr>
+		<td>
+			<h3>We would like to hear from you about our service that you had received. 
+			Please do help us by commenting, sending your queries and messages and by so doing, you help us to improve on our products and services. 
+			</h3>
+		</td>
+		</tr>
+	</table>
+	
+        <table id="contact">
+		<tr>
+			<td> <label>Name:</label> </td><td><input type="text" name="name" maxlength="20" size="30"/> </td>
+		</tr>
+
+		<tr>
+			<td><label> Surname:</label></td><td><input type="text" name="surname" maxlength="25" size="30"/> </td>
+		</tr>
+		
+		<tr>
+			<td><label> Telephone number:</label></td><td><input type="text" name="telephone" maxlength="25" size="30"/> </td>
+		</tr>
+		
+		<tr>
+			<td><label> Email:</label></td><td><input type="text"  value="" name="cemail" maxlength="50" size="30"/> </td>
+		</tr>
+		<tr>
+			<td> 	<label>Gender:</label> </td>
+					<td>
+						<select name="gender">
+							<option id=g1 value="Select your gender">Select your gender</option>
+							<option id=gm value="Male">Male</option>
+							<option id=gf value="Female">Female</option>
+						</select>
+					</td>
+		</tr>
+	</table>
+	
+	<table id="contact2">
+		<tr>
+			<td><textarea cols="40" rows="12" name="text">Type your comments here...</textarea> </td>
+		</tr>
+
+		<tr>
+			<td align="center">
+				<div class="button">
+					<input type="button" value="Send" name="csend" onclick="Validate()"/>
+					<input type="reset" value="Clear" name="cclear" onclick="confirmReset()"/>
+				</div>
+			</td>
+		</tr>
+		
+		<tr style="float:right">
+			<td>
+				<ul>
+				<li> Tellphone: 011 890 6780</li> 
+				<li> Fax: 011 890 6798</li> 
+				<li> Email: thabangmoepi@gmail.com</li> 
+				<li> Address: 5372 Hubela Street, Wind mil Park Estate,Boksburg, 1459</li> 
+				</ul>
+			</td>
+		</tr>
+	
+	</table>
+	
+	</form>				
+</div>
+    </body>
+</html>

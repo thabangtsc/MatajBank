@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MATAJBank_Buy_Airtime</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="myScript.js"></script>
+    </head>
+    <body>
+        <div>Airtime</div>
+        <div id="form" align="center">
+        <form name="airtime" method="post" action="airtime.jsp">
+            <center>
+            <h2 style="color:green">Airtime </h2>
+        </center>
+            <table>
+                <tr> 
+                    <td> 
+                        <fieldset>
+                     <legend>Network Provider:</legend> 
+
+                     <br>
+                        <input type="radio" name="cell" value="cellC" id="c"/>
+                        <img src="cell c.png" alt="CellCPic" width="50" height="30"/>
+                     <br>
+                        <input type="radio" name="mtn" value="MTN" id="m">
+                         <img src="MTN_Logo.svg.png" alt="MtnPic" width="50" height="30" />
+                    <br>
+                         <input type="radio" name="telkom" value="Telkom" id="t" >
+                        <img src="Telkom.png" alt="TelkpmPic" width="50" height="30"/>
+                     <br>
+                        <input type="radio" name="vodacom" value="Vodacom" id="v">
+                        <img src="vodacom.jpg" alt="VodacomPic" width="50" height="30"/>
+                    </fieldset>
+                   </td>
+                    
+                </tr>
+                 <tr>
+                        <td>Amount:</td> <td><input type="text" name="amt"/></td> 
+                 </tr>
+               <tr> 
+                   <td>Account Number:</td> <td> <input type="text" name="acc"/> </td>
+               </tr>
+             
+               <tr> 
+                  
+                       
+                 <div id="btn">
+                     <td> <input type="submit" name="btnAirtime" value="Buy Airtime" onclick="myFunction()"/></td>
+                     <td> <input type="reset" name="btnReset"/> </td>
+                 </div>  
+                 
+               </tr>
+               
+            </table> 
+        </form>
+            <p id="demo"></p>
+
+        </div>
+        
+        <a href="transactions.html">Back</a>
+    </body>
+</html>
